@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SimpleStorage</title>
+    <script src="./index.js"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body >
+    <div class="py-7">
+      <button
+        id="connectButton"
+        class="rounded-full shadow-lg text-blue-500 hover:text-blue-400 px-2 py-2 mx-auto max-w-sm border-2 m-5 ml-10 drop-shadow-md"
+      >
+        Connect
+      </button>
+
+      <form action="">
+        <div class="py-2">
+          <label for="name" class="ml-10 py-4">Name</label>
+          <input
+            class="rounded-full px-4 border border-gray-300"
+            id="name"
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div class="py-2">
+          <label for="favouriteNum" class="ml-10">Favourite Number</label>
+          <input
+            id="favNum"
+            class="rounded-full px-4 border border-gray-300"
+            placeholder="Enter Favourite Number"
+          />
+        </div>
+
+        <button class="ml-10 px-4 py-2 text-sm text-purple-600 font-light rounded-full border border-purple-200 hover:text-black focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" type="button" id="submit" class="ml-10">Submit</button>
+      </form>
+    </div>
+
+    <div class="ml-10 py-5">
+      <form action="">
+        <label for="requestingName"
+          >Enter the name for which you want the favourite number from
+          blockchain</label
+        >
+        <input
+          type="text"
+          name=""
+          class="rounded-full px-4 mt-5 mb-5 border border-gray-300"
+            
+          id="requestingName"
+          placeholder="enter valid name"
+        />
+        <button class="px-4 py-2 text-sm text-purple-600 font-light rounded-full border border-purple-200 hover:text-black-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" id="getting">Get FavNum</button>
+        <br />
+        <div class="py-5 max-w-2xl backdrop-blur shadow-lg w-40">
+            <p class="py-5 px-5 font-bold" id="number section">Enter name to get favourite number</p>
+
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./index.js" type="module"></script>
+</html>
