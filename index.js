@@ -65,13 +65,13 @@ async function GetNum(event){
             console.log("Retrieving favorite number for name:", name1);
             const favNum = await contract.retrieve(name1);
             // console.log("Favorite number retrieved:", favNum);
-            // if(favNum == 0){
+            if(favNum == 0){
 
-            //     document.getElementById("number section").innerHTML = "Data of this person is not found!";
-            // }
-            // else{
+                 document.getElementById("number section").innerHTML = "Data of this person is not found!";
+            }
+            else{
                 document.getElementById("number section").innerHTML = favNum;
-            // }
+            }
         } catch (error) {
         console.log(error);
       }
